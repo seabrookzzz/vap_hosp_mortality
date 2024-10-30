@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 
 def web_app():
     st.set_page_config(page_title='Hospital Mortality Risk in VAP Patients')
-    rf = joblib.load('./vapweb/rf.pkl')
-    # rf = joblib.load('./rf.pkl')
+    # rf = joblib.load('./vapweb/rf.pkl')
+    rf = joblib.load('./rf.pkl')
 
     class Subject:
         def __init__(self, Age, BMI, DBP, Temperature, UO, Platelets, Aniongap, Bicarbonate,
